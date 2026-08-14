@@ -4,7 +4,7 @@ Computer Engineering student at UC Irvine, working on efficient AI inference for
 
 ## About
 
- I was an undergraduate researcher at UCI's Calit2 Computer Vision Lab (wildfire detection) and am currently a Controls Systems Engineer on UCI HyperXite (Hyperloop). Graduating June 2028. I'm building toward getting neural networks to run fast and correctly on constrained hardware. Embedded systems give me the hardware discipline (bare-metal STM32, FreeRTOS, register-level control), and AI inference with quantization is where I apply it (INT8 PTQ, custom C++ inference engines, CUDA kernel optimization).
+I was an undergraduate researcher at UCI's Calit2 Computer Vision Lab (wildfire detection) and am currently a Controls Systems Engineer on UCI HyperXite (Hyperloop). Graduating June 2028. I'm building toward getting neural networks to run fast and correctly on constrained hardware. Embedded systems give me the hardware discipline (bare-metal STM32, FreeRTOS, register-level control), and AI inference with quantization is where I apply it (INT8 PTQ, custom C++ inference engines, CUDA kernel optimization).
 ---
 
 ## Featured Projects
