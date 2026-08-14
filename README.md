@@ -1,6 +1,6 @@
 # Rachit Jain
 
-Second-year Computer Engineering student at UC Irvine, working on efficient AI inference for embedded hardware.
+Computer Engineering student at UC Irvine, working on efficient AI inference for embedded hardware.
 
 ## About
 
