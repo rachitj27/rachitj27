@@ -1,16 +1,16 @@
-# Rachit
+# Rachit Jain
 
 Second-year Computer Engineering student at UC Irvine, working on efficient AI inference for embedded hardware.
 
 ## About
 
-I'm building toward one thing: getting neural networks to run fast and correctly on constrained hardware. Embedded systems give me the hardware discipline (bare-metal STM32, FreeRTOS, register-level control), and AI inference with quantization is where I apply it (INT8 PTQ, custom C++ inference engines, CUDA kernel optimization). Both come from the same instinct: understand every layer of the stack, don't trust black boxes. I'm currently an undergraduate researcher at UCI's Calit2 Computer Vision Lab (wildfire detection) and a Controls Systems Engineer on UCI HyperXite (Hyperloop). Graduating June 2028.
+I'm building toward one thing: getting neural networks to run fast and correctly on constrained hardware. Embedded systems give me the hardware discipline (bare-metal STM32, FreeRTOS, register-level control), and AI inference with quantization is where I apply it (INT8 PTQ, custom C++ inference engines, CUDA kernel optimization). I was an undergraduate researcher at UCI's Calit2 Computer Vision Lab (wildfire detection) and am currently a Controls Systems Engineer on UCI HyperXite (Hyperloop). Graduating June 2028.
 
 ---
 
 ## Featured Projects
 
-### Project Helios
+### Custom INT8 Quantization and C++ Inference Engine for YOLOv8n
 Custom INT8 inference engine for YOLOv8n fire/smoke detection, written from scratch in C++.
 
 - INT8 PTQ pipeline preserves 91% of FP32 mAP (0.8445 vs 0.9253)
@@ -21,7 +21,7 @@ Custom INT8 inference engine for YOLOv8n fire/smoke detection, written from scra
 ![PyTorch](https://img.shields.io/badge/PyTorch-informational?style=flat-square&logo=pytorch&logoColor=white)
 ![ONNX](https://img.shields.io/badge/ONNX-informational?style=flat-square&logo=onnx&logoColor=white)
 
-[Repository](TODO)
+[Repository](https://github.com/rachitj27/Custom-AI-Hardware-Inference)
 
 ### cuda-gemm-from-scratch
 CUDA GEMM kernels built from naive to optimized, targeted at eventual integration into Helios's conv2d path via im2col.
@@ -33,7 +33,7 @@ CUDA GEMM kernels built from naive to optimized, targeted at eventual integratio
 ![CUDA](https://img.shields.io/badge/CUDA-informational?style=flat-square&logo=nvidia&logoColor=white)
 ![C++](https://img.shields.io/badge/C%2B%2B-informational?style=flat-square&logo=cplusplus&logoColor=white)
 
-[Repository](TODO)
+[Repository](https://github.com/rachitj27/cuda-gemm-from-scratch)
 
 ### HyperXite Controls (STM32 / FreeRTOS)
 Real-time controls firmware for UCI's Hyperloop pod.
@@ -46,7 +46,7 @@ Real-time controls firmware for UCI's Hyperloop pod.
 ![FreeRTOS](https://img.shields.io/badge/FreeRTOS-informational?style=flat-square&logo=freertos&logoColor=white)
 ![C](https://img.shields.io/badge/C-informational?style=flat-square&logo=c&logoColor=white)
 
-[Repository](TODO)
+Repo: Coming Soon
 
 ### STM32F446RE Bare-Metal Proximity Alert System
 Ultrasonic distance sensor driving a three-LED threshold indicator, written entirely against the STM32F446RE's memory-mapped registers with zero HAL dependency.
@@ -58,7 +58,7 @@ Ultrasonic distance sensor driving a three-LED threshold indicator, written enti
 ![STM32](https://img.shields.io/badge/STM32-informational?style=flat-square&logo=stmicroelectronics&logoColor=white)
 ![C](https://img.shields.io/badge/C-informational?style=flat-square&logo=c&logoColor=white)
 
-[Repository](TODO)
+[Repository](https://github.com/rachitj27/stm-32-ultrasonicLED)
 
 ### FRND (IrvineHacks 2026)
 Disaster mesh network with an on-device LLM chat assistant.
@@ -71,7 +71,7 @@ Disaster mesh network with an on-device LLM chat assistant.
 ![Arduino](https://img.shields.io/badge/Arduino-informational?style=flat-square&logo=arduino&logoColor=white)
 ![llama.cpp](https://img.shields.io/badge/llama.cpp-informational?style=flat-square)
 
-[Repository](TODO)
+[Repository](https://github.com/vrushang1234/FRND)
 
 ---
 
@@ -92,7 +92,7 @@ Disaster mesh network with an on-device LLM chat assistant.
 ## Currently Working On
 
 - Kernel 3 of cuda-gemm-from-scratch (shared memory tiling), then a 2D register-tiled kernel
-- Wiring an im2col + GEMM path into Helios's conv2d to replace the reference loops
+- Wiring an im2col + GEMM path into custom engine's conv2d to replace the reference loops
 - HyperXite pod controls firmware for the next competition cycle
 
 ---
