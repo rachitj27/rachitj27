@@ -38,7 +38,7 @@ CUDA GEMM kernels built from naive to optimized, targeted at eventual integratio
 ### HyperXite Controls (STM32 / FreeRTOS)
 Real-time controls firmware for UCI's Hyperloop pod.
 
-- FreeRTOS on STM32 Nucleo-F446RE with multi-priority tasks
+- FreeRTOS on STM32 with multi-priority tasks
 - UART telemetry pipeline for live pod state
 - Register-level HAL work for peripheral drivers
 
