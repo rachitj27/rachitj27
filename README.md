@@ -13,18 +13,19 @@ I was an undergraduate researcher at UCI's Calit2 Computer Vision Lab (wildfire 
 ### Custom INT8 Quantization and C++ Inference Engine for YOLOv8n
 Custom INT8 inference engine for YOLOv8n fire/smoke detection, written from scratch in C++.
 
-- INT8 PTQ pipeline preserves 91% of FP32 mAP (0.8445 vs 0.9253)
-- Bit-level validated conv2d, 98% of 1.6M output values within +/-1 of the reference
-- Root-caused end-to-end drift to Concat mixing tensors at different quantization scales
+- Built the whole inference pipeline by hand in C++, from the convolution math up to drawing labelled boxes on the photo, without using a machine learning library
+- Compressed the model from 32-bit decimals to 8-bit integers, four times smaller, while keeping 99.6% of the original detection accuracy (0.8826 vs 0.8859 mAP)
+- Wrote the compression math from first principles instead of calling a library function, including measuring each layer's real number range on calibration images
+- Checked correctness two ways, comparing every layer against PyTorch and scoring detections across the full test set
 
 ![C++](https://img.shields.io/badge/C%2B%2B-informational?style=flat-square&logo=cplusplus&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-informational?style=flat-square&logo=pytorch&logoColor=white)
 ![ONNX](https://img.shields.io/badge/ONNX-informational?style=flat-square&logo=onnx&logoColor=white)
 
-[Repository](https://github.com/rachitj27/Custom-AI-Hardware-Inference)
+[Repository](https://github.com/rachitj27/Custom-Quantization-and-Inference-Engine-)
 
 ### cuda-gemm-from-scratch
-CUDA GEMM kernels built from naive to optimized, targeted at eventual integration into Helios's conv2d path via im2col.
+CUDA GEMM kernels built from naive to optimized, targeted at eventual integration into the inference engine's conv2d path via im2col.
 
 - Kernels 1 (naive) and 2 (coalesced) complete on T4
 - Kernel 3 (shared memory tiling) in progress
