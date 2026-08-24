@@ -15,8 +15,8 @@ Custom INT8 inference engine for YOLOv8n fire/smoke detection, written from scra
 
 - Built the whole inference pipeline by hand in C++, from the convolution math up to drawing labelled boxes on the photo, without using a machine learning library
 - Compressed the model from 32-bit decimals to 8-bit integers, four times smaller, while keeping 99.6% of the original detection accuracy (0.8826 vs 0.8859 mAP)
-- Wrote the compression math from first principles instead of calling a library function, including measuring each layer's real number range on calibration images
-- Checked correctness two ways, comparing every layer against PyTorch and scoring detections across the full test set
+- Wrote the compression math from first principles instead of calling a library function.
+
 
 ![C++](https://img.shields.io/badge/C%2B%2B-informational?style=flat-square&logo=cplusplus&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-informational?style=flat-square&logo=pytorch&logoColor=white)
