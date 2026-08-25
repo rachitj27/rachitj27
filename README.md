@@ -61,6 +61,19 @@ Ultrasonic distance sensor driving a three-LED threshold indicator, written enti
 
 [Repository](https://github.com/rachitj27/stm-32-ultrasonicLED)
 
+### RISC-V Single-Cycle Processor (Verilog)
+A working 32-bit RISC-V processor designed from scratch in Verilog and verified in simulation.
+
+- Designed the actual circuitry of a computer processor, the part that reads instructions and does the work a program asks for
+- Built each piece by hand and wired them together: the arithmetic unit, the memory, the registers, and the control logic that decides what every instruction does
+- Verified the design by simulating a 20-instruction test program and confirming the processor produced the correct result at every single step
+
+![Verilog](https://img.shields.io/badge/Verilog-informational?style=flat-square)
+![Vivado](https://img.shields.io/badge/Vivado-informational?style=flat-square&logo=xilinx&logoColor=white)
+![RISC-V](https://img.shields.io/badge/RISC--V-informational?style=flat-square&logo=riscv&logoColor=white)
+
+[Repository](https://github.com/rachitj27/riscv-single-cycle-processor)
+
 ### FRND (IrvineHacks 2026)
 Disaster mesh network with an on-device LLM chat assistant.
 
@@ -83,6 +96,7 @@ Disaster mesh network with an on-device LLM chat assistant.
 ![Python](https://img.shields.io/badge/Python-informational?style=flat-square&logo=python&logoColor=white)
 ![CUDA](https://img.shields.io/badge/CUDA-informational?style=flat-square&logo=nvidia&logoColor=white)
 ![Verilog](https://img.shields.io/badge/Verilog-informational?style=flat-square)
+![Vivado](https://img.shields.io/badge/Vivado-informational?style=flat-square&logo=xilinx&logoColor=white)
 ![STM32](https://img.shields.io/badge/STM32-informational?style=flat-square&logo=stmicroelectronics&logoColor=white)
 ![FreeRTOS](https://img.shields.io/badge/FreeRTOS-informational?style=flat-square&logo=freertos&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-informational?style=flat-square&logo=pytorch&logoColor=white)
