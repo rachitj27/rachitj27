@@ -38,7 +38,7 @@ I was an undergraduate researcher at UCI's **Calit2 Computer Vision Lab** (wildf
 <br />
 
 - Built the whole inference pipeline by hand in C++, from the convolution math up to drawing labelled boxes on the photo, without using a machine learning library
-- Compressed the model from 32-bit decimals to 8-bit integers, four times smaller, while keeping 99.6% of the original detection accuracy (0.8826 vs 0.8859 mAP)
+- Wrote the compression math from first principles instead of calling a library function, taking the model from 32-bit decimals to 8-bit integers, four times smaller, while keeping 99.6% of the original detection accuracy (0.8826 vs 0.8859 mAP)
 - Vectorized the convolution around the processor's 8-bit dot product instruction, 15x faster and byte-for-byte identical to the plain loop
 
 ![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
@@ -97,6 +97,22 @@ I was an undergraduate researcher at UCI's **Calit2 Computer Vision Lab** (wildf
 
 <br />
 
+### ⚙️ RISC-V Single-Cycle Processor (Verilog)
+
+> A working 32-bit RISC-V processor designed from scratch in Verilog and verified in simulation.
+
+- Designed the actual circuitry of a computer processor, the part that reads instructions and does the work a program asks for
+- Built each piece by hand and wired them together: the arithmetic unit, the memory, the registers, and the control logic that decides what every instruction does
+- Verified the design by simulating a 20-instruction test program and confirming the processor produced the correct result at every single step
+
+![Verilog](https://img.shields.io/badge/Verilog-4B5563?style=flat-square)
+![Vivado](https://img.shields.io/badge/Vivado-E01F27?style=flat-square&logo=xilinx&logoColor=white)
+![RISC-V](https://img.shields.io/badge/RISC--V-283272?style=flat-square&logo=riscv&logoColor=white)
+
+[![Repository](https://img.shields.io/badge/View_Repository-283272?style=for-the-badge&logo=github&logoColor=white)](https://github.com/rachitj27/riscv-single-cycle-processor)
+
+<br />
+
 ### 🛰️ FRND (IrvineHacks 2026)
 
 > Disaster mesh network with an on-device LLM chat assistant.
@@ -124,6 +140,7 @@ I was an undergraduate researcher at UCI's **Calit2 Computer Vision Lab** (wildf
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![CUDA](https://img.shields.io/badge/CUDA-76B900?style=for-the-badge&logo=nvidia&logoColor=white)
 ![Verilog](https://img.shields.io/badge/Verilog-4B5563?style=for-the-badge&logoColor=white)
+![Vivado](https://img.shields.io/badge/Vivado-E01F27?style=for-the-badge&logo=xilinx&logoColor=white)
 
 **AI / Inference**
 
