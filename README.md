@@ -28,15 +28,6 @@ I was an undergraduate researcher at UCI's **Calit2 Computer Vision Lab** (wildf
 
 > Custom INT8 inference engine for YOLOv8n fire/smoke detection, written from scratch in C++.
 
-<div align="center">
-  <img src="https://raw.githubusercontent.com/rachitj27/Custom-Quantization-and-Inference-Engine-/main/docs/examples/fire.jpg" width="43%" alt="Fire detected at 73 percent confidence" />
-  <img src="https://raw.githubusercontent.com/rachitj27/Custom-Quantization-and-Inference-Engine-/main/docs/examples/smoke.jpg" width="43%" alt="Smoke detected at 90 percent confidence" />
-  <br />
-  <sub><i>Real output from the engine, boxes and confidences drawn by my own code, no post-processing.</i></sub>
-</div>
-
-<br />
-
 - Built the whole inference pipeline by hand in C++, from the convolution math up to drawing labelled boxes on the photo, without using a machine learning library
 - Wrote the compression math from first principles instead of calling a library function, taking the model from 32-bit decimals to 8-bit integers, four times smaller, while keeping 99.6% of the original detection accuracy (0.8826 vs 0.8859 mAP)
 - Vectorized the convolution around the processor's 8-bit dot product instruction, 15x faster and byte-for-byte identical to the plain loop
