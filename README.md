@@ -6,7 +6,7 @@
 
 <br />
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rachit-jain27/)
+
 [![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:rjrachit06@gmail.com)
 ![Location](https://img.shields.io/badge/Irvine,_CA-0F172A?style=for-the-badge&logo=googlemaps&logoColor=F97316)
 
