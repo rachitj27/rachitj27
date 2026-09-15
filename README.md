@@ -46,9 +46,9 @@ I was an undergraduate researcher at UCI's **Calit2 Computer Vision Lab** (wildf
 
 > CUDA GEMM kernels built from naive to optimized, targeted at eventual integration into the inference engine's conv2d path via im2col.
 
-- Kernels 1 (naive) and 2 (coalesced) complete on T4
-- Kernel 3 (shared memory tiling) in progress
-- Benchmarked against cuBLAS as the reference ceiling
+- Built five progressively optimized CUDA matrix multiplication kernels from naive to 2D register tiling, reaching 76% of cuBLAS throughput on NVIDIA T4
+- Improved performance 52x over the naive baseline through memory coalescing, shared memory tiling, and register blocking, with bit-identical correctness against cuBLAS at every stage
+
 
 ![CUDA](https://img.shields.io/badge/CUDA-76B900?style=flat-square&logo=nvidia&logoColor=white)
 ![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
