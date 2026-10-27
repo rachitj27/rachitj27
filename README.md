@@ -69,7 +69,7 @@ I was an undergraduate researcher at UCI's **Calit2 Computer Vision Lab** (wildf
 ![FreeRTOS](https://img.shields.io/badge/FreeRTOS-01AC5E?style=flat-square&logo=freertos&logoColor=white)
 ![C](https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=c&logoColor=black)
 
-![Repository](https://img.shields.io/badge/Repository-Coming_Soon-64748B?style=for-the-badge&logo=github&logoColor=white)](https://github.com/UCI-HyperXite/hx12-control-system)
+[![Repository](https://img.shields.io/badge/Repository-Coming_Soon-64748B?style=for-the-badge&logo=github&logoColor=white)](https://github.com/UCI-HyperXite/hx12-control-system)
 
 <br />
 
